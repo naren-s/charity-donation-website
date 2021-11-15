@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Charity Trust</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link rel="icon" href="images/donate.png" type="image/x-icon">
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+               <img src="images/logo1-2.png" class="logo">
+               <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="contact.html">Contact Us</a></li>
+                   <li><a href="about.html">About Us</a></li>
+               </ul>
+            </div>
+            <div class="content">
+                <h1>HELPING OTHERS IS A GOOD FEELING</h1>
+                <div class="donate">
+                    <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_IFqrVkcDjy1E5U" async> </script> </form>
+                </div>
+            </div>
+        </div>
+
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyBL6DoUzF5pbta5afqOPHaUYa-fJMzz2Ko",
+              authDomain: "charity-trust.firebaseapp.com",
+              projectId: "charity-trust",
+              storageBucket: "charity-trust.appspot.com",
+              messagingSenderId: "705797326185",
+              appId: "1:705797326185:web:aefc3a56a2c5a2c178e9f8",
+              measurementId: "G-76DBNJQEFC"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+          </script>
+
+    </body>
+</html>
